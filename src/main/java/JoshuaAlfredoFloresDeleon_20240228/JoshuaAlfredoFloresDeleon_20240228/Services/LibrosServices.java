@@ -98,7 +98,7 @@ public class LibrosServices {
         return convertirALibroDTO(libroActualizado);
     }
 
-    public boolean romoverLibro(Long id) {
+    public boolean removerLibro(Long id) {
         try {
             LibrosEntity objLibro = repoLibro.findById(id).orElse(null);
             if (objLibro != null) {
